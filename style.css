@@ -1,0 +1,107 @@
+body{
+font-family: Arial, sans-serif;
+background: linear-gradient(135deg,silver,grey);
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+color:white;
+}
+
+.app{
+background:rgba(0,0,0,0.6);
+padding:30px;
+border-radius:12px;
+width:700px;
+backdrop-filter:blur(10px);
+}
+
+header{
+text-align:center;
+margin-bottom:20px;
+}
+
+.task-input{
+display:flex;
+gap:10px;
+margin-bottom:20px;
+}
+
+.task-input input,
+.task-input select{
+padding:10px;
+border:none;
+border-radius:6px;
+}
+
+button{
+background:#00d4ff;
+border:none;
+padding:10px 20px;
+border-radius:6px;
+cursor:pointer;
+transition:0.3s;
+}
+
+button:hover{
+transform:scale(1.05);
+}
+
+.dashboard{
+display:flex;
+justify-content:space-between;
+margin-bottom:20px;
+}
+
+.card{
+background:rgba(255,255,255,0.1);
+padding:15px;
+border-radius:10px;
+text-align:center;
+width:30%;
+}
+
+.task-list ul{
+list-style:none;
+padding:0;
+}
+
+.task{
+background:white;
+color:black;
+margin-bottom:10px;
+padding:12px;
+border-radius:8px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+animation:fadeIn 0.4s ease;
+}
+
+.priority-high{
+border-left:6px solid red;
+}
+
+.priority-medium{
+border-left:6px solid orange;
+}
+
+.priority-low{
+border-left:6px solid green;
+}
+
+.completed{
+text-decoration:line-through;
+opacity:0.6;
+}
+
+@keyframes fadeIn{
+from{
+opacity:0;
+transform:translateY(-10px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}

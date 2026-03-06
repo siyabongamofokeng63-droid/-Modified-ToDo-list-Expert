@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+
+<title>To-Do list Expert</title>
+
+</head>
+
+<body>
+
+<div class="app">
+
+<header>
+<h1>To-Do list Expert</h1>
+<p>Built By Siyabonga Mofokeng</p>
+</header>
+
+
+<section class="task-input">
+
+<input
+type="text"
+id="taskInput"
+placeholder="Enter new task..."
+>
+
+<select id="priority">
+
+<option value="low">Low</option>
+<option value="medium">Medium</option>
+<option value="high">High</option>
+
+</select>
+
+<input type="date" id="dueDate">
+
+<button id="addTaskBtn">Add Task</button>
+
+</section>
+
+
+<section class="dashboard">
+
+<div class="card">
+<h3>Total Tasks</h3>
+<p id="totalTasks">0</p>
+</div>
+
+<div class="card">
+<h3>Completed</h3>
+<p id="completedTasks">0</p>
+</div>
+
+<div class="card">
+<h3>Pending</h3>
+<p id="pendingTasks">0</p>
+</div>
+
+</section>
+
+
+<section class="task-list">
+
+<ul id="taskList"></ul>
+
+</section>
+
+</div>
+
+</body>
+</html>
